@@ -1,28 +1,108 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Karmakars Corporation</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Karmakars Corporation - Street Legends</title>
   <style>
-    body { font-family: Arial, sans-serif; background: #fff; color: #333; margin: 0; padding: 0; }
-    header { display: flex; align-items: center; padding: 10px 20px; background: #f0f0f0; }
-    header img { height: 60px; margin-right: 15px; }
-    main { padding: 20px; }
-    section#game { margin-top: 40px; }
-    iframe { width: 100%; height: 500px; border: none; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #fff;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    header img {
+      height: 50px;
+      margin-right: 15px;
+    }
+    header h1 {
+      font-size: 24px;
+    }
+    nav {
+      margin-left: auto;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+    }
+    section {
+      padding: 20px;
+    }
+    .screenshots img {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+    }
+    .email-form input, .email-form textarea {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    footer {
+      background: #ddd;
+      text-align: center;
+      padding: 15px;
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="assets/logo.png" alt="Phoenix Logo">
+    <img src="phoenix_logo.png" alt="Karmakars Logo">
     <h1>Karmakars Corporation</h1>
+    <nav>
+      <a href="#play">Play</a>
+      <a href="#careers">Careers</a>
+      <a href="#about">About</a>
+      <a href="flappy.html">Games</a>
+    </nav>
   </header>
-  <main>
-    <p>Welcome to the official site of Karmakars Corporation. Download the NFS India Game and try our new web game!</p>
-    <section id="game">
-      <h2>Play Now</h2>
-      <iframe src="flappy.html"></iframe>
-    </section>
-  </main>
+
+  <section id="intro">
+    <h2>Street Legends – Undercops</h2>
+    <p>An intense, India-themed racing experience featuring iconic cars, high-speed police chases, garage upgrades, and street battles. Join the revolution of underground racing!</p>
+  </section>
+
+  <section class="screenshots">
+    <h2>Screenshots</h2>
+    <img src="ss1.jpg" alt="Screenshot 1">
+    <img src="ss2.jpg" alt="Screenshot 2">
+  </section>
+
+  <section id="play">
+    <h2>Play Game</h2>
+    <p><a href="flappy.html">Try our demo web game here!</a></p>
+  </section>
+
+  <section id="careers">
+    <h2>Careers</h2>
+    <p>We are hiring developers, artists, and creative minds to bring *Street Legends – Undercops* to life. Contact us below:</p>
+    <form class="email-form" action="mailto:karmakarscorporation@example.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message"></textarea>
+      <button type="submit">Send Email</button>
+    </form>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Karmakars Corporation is a rising indie game studio focused on delivering bold, high-quality Indian-themed games. We combine passion, innovation, and real cultural detail to create unique gaming experiences.</p>
+  </section>
+
+  <footer>
+    <p>We need developers and artists to make Street Legends – Undercops a reality. Join us today!</p>
+    <p>&copy; 2025 Karmakars Corporation</p>
+  </footer>
 </body>
 </html>
+
+
